@@ -2,37 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>React Hello World</title>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
 </head>
 
 
 
 
 <body>
-    <div id="application-root"></div>
+  <div id="application-root"></div>
 
-    <script src="https://unpkg.com/react@16/umd/react.development.js">
-    </script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
-    </script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
-    </script>
-
-
+  <script src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
 
 
 
-    <script type="text/babel">
+
+
+  <script type="text/babel">
     function App() {
-  return (
-    <div>
-        <h1>Sally Student's Resume</h1>
-        <h2>Aspiring Fullstack Web Developer</h2>
-    </div>
-  );
-}
-        ReactDOM.render(<App />, 
+      return (
+        <div>
+          <h1>Sally Student's Resume</h1>
+          <h2>Aspiring Fullstack Web Developer</h2>
+        <main>
+      <section>
+        <h3>Skills:</h3> 
+          <table>
+            <tr>
+              <th scope="row">HTML</th>
+              <td><meter min="0" max="100" value="80"></meter></td>
+            </tr>
+
+            <tr>
+              <th scope="row">CSS</th>
+              <td><meter min="0" max="100" value="40"></meter></td>
+            </tr>
+
+            <tr>
+              <th scope="row">JavaScript</th>
+              <td><meter min="0" max="100" value="35"></meter></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Node.js</th>
+              <td><meter min="0" max="100" value="20"></meter></td>
+            </tr>
+
+            <tr>
+              <th scope="row">SQL</th>
+              <td><meter min="0" max="100" value="25"></meter></td>
+            </tr>
+
+            <tr>
+              <th scope="row">React</th>
+              <td><meter min="0" max="100" value="10"></meter></td>
+            </tr>
+
+            <tr>
+              <th scope="row">WebGL</th>
+              <td><meter min="0" max="100" value="5"></meter></td>
+            </tr>
+
+            <tr>
+              <th scope="row">Python</th>
+              <td><meter min="0" max="100" value="70"></meter></td>
+             </tr>
+            </table>
+             
+          </section>
+
+        <section>
+          <h3>Employment History:</h3>          
+              
+              <p><i>June 2019 - Present</i><br></br>
+              <b>Thinkful, Engineering Immersion</b><br></br>
+                A rigorous and structured, full-time program built to get you a job as a full-stack engineer. Get the benefits of instructor-led learning in a virtual classroom environment, 1-on-1 mentorship, and a support team.</p>                    
+              <p><i>December 2016 - June 2019</i><br></br>
+              <b>Jim Bob's Computer Emporium, Senior Go-To Guy</b><br></br>
+                Responsible for computer repairs, forensic data recovery, customer support, and making a <em>ridiculous</em> amount of coffee.</p>         
+              
+              <p><i>August 2014 - December 2016</i><br></br>
+              <b>Wilber's Widget Warehouse, R&D</b><br></br>
+                Created and optimized the production of custom widgets for members of government to play with while pretending to work.</p>           
+              
+              <p><i>April 2010 - August 2014</i><br></br>
+              <b>Glowing Frogmen, Nuclear Diver</b><br></br>
+                Saturation trained diver specializing in nuclear facility safety inspections, maintenance, and scientific testing.</p>             
+          </section>
+          
+          
+    
+        <section>
+          <h3>Education:</h3><br></br>
+            <p><i>April 2006 - August 2010</i><br></br>
+            <b>The College of Everything, 3.93 GPA</b><br></br>
+            Dean's list, President of the Student Organization of Doing Everything Well.</p>
+        
+        </section>
+
+
+        <section>
+          <h3>Contact me:</h3> <br></br>
+        </section>
+
+         <address>
+              Email: <a href="mailto:sally.student@dev.com?subject=Interview">sally.student@dev.com</a><br></br>
+              Cell: <a href="tel:+1234567890)">(123) 456-7890</a><br></br>
+              Twitter: <a href="https://twitter.com/sallystudent">@SallyStudent</a>  <br></br>       
+              <img src="https://pbs.twimg.com/profile_images/1502208479/2042_400x400.jpg" alt="A picture of me, Sally Student." height="90" width="90"></img>
+          </address>
+        
+        <footer>
+          <q>Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.</q> -<i>Linus Torvalds</i> 
+        </footer>
+             
+    </main>
+  </div>
+    );
+  }
+        ReactDOM.render(<App></ App>, 
             document.querySelector('#application-root')); 
     </script>
 
