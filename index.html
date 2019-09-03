@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+    <div id="application-root"></div>
+  
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+<script>
+    // Our code will go here
+    const appRoot = document.querySelector('#application-root');
+  
+    ReactDOM.render('Hello, world!', appRoot);
+  </script>
+
+<hgroup>
+    <h1>Sally Student's Resume</h1>
+    <h2>Aspiring Fullstack Web Developer</h2>
+   </hgroup>
+    <br>
+
+  <main>
+    <section>
+      <h3>Skills:</h3> <!--fake values-->
+        <table>
+          <tr>
+            <th scope="row">HTML</th>
+            <td><meter min="0" max="100" value="80"></meter></td>
+          </tr>
+
+          <tr>
+            <th scope="row">CSS</th>
+            <td><meter min="0" max="100" value="40"></meter></td>
+          </tr>
+
+          <tr>
+            <th scope="row">JavaScript</th>
+            <td><meter min="0" max="100" value="35"></meter></td>
+          </tr>
+
+          <tr>
+            <th scope="row">Node.js</th>
+            <td><meter min="0" max="100" value="20"></meter></td>
+          </tr>
+
+          <tr>
+            <th scope="row">SQL</th>
+            <td><meter min="0" max="100" value="25"></meter></td>
+          </tr>
+
+          <tr>
+            <th scope="row">React</th>
+            <td><meter min="0" max="100" value="10"></meter></td>
+          </tr>
+
+          <tr>
+            <th scope="row">WebGL</th>
+            <td><meter min="0" max="100" value="5"></meter></td>
+          </tr>
+
+          <tr>
+            <th scope="row">Python</th>
+            <td><meter min="0" max="100" value="70"></meter></td>
+           </tr>
+          </table>
+          <br><br> <!--Probably a terrible to go about formatting.-->
+        </section>
+
+      <section>
+        <h3>Employment History:</h3>
+        <!--Not sure I like the formatting that this <dl>/<dt>/<dd> list provides-->           
+            
+            <p><i>June 2019 - Present</i><br>
+            <b>Thinkful, Engineering Immersion</b><br>
+              A rigorous and structured, full-time program built to get you a job as a full-stack engineer. Get the benefits of instructor-led learning in a virtual classroom environment, 1-on-1 mentorship, and a support team.</p>                    
+            <p><i>December 2016 - June 2019</i><br>
+            <b>Jim Bob's Computer Emporium, Senior Go-To Guy</b><br>
+              Responsible for computer repairs, forensic data recovery, customer support, and making a <em>ridiculous</em> amount of coffee.</p>         
+            
+            <p><i>August 2014 - December 2016</i><br>
+            <b>Wilber's Widget Warehouse, R&D</b><br>
+              Created and optimized the production of custom widgets for members of government to play with while pretending to work.</p>           
+            
+            <p><i>April 2010 - August 2014</i><br>
+            <b>Glowing Frogmen, Nuclear Diver</b><br>
+              Saturation trained diver specializing in nuclear facility safety inspections, maintenance, and scientific testing.</p>             
+        </section>
+        <br><br>
+        
+  
+      <section>
+        <h3>Education:</h3>
+          <p><i>April 2006 - August 2010</i><br>
+          <b>The College of Everything, 3.93 GPA</b><br>
+          Dean's list, President of the Student Organization of Doing Everything Well.</p>
+      <br><br>
+      </section>
+    </main>
+
+
+  </body>
+
+</html>
